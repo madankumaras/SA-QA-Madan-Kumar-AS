@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FullRegressionSuite" parallel="false">
+    <listeners>
+        <listener class-name="sauseLab.TestComponents.Listeners"/>
+    </listeners>
+    <test name="All E2E Tests">
+        <classes>
+            <!-- Priority 1: Run PlaceOrderTest first -->
+            <class name="sauseLab.tests.PlaceOrderTest"/>
+            <!-- Priority 2: Run NegativeLoginTest second -->
+            <class name="sauseLab.tests.negativeLoginTest"/>
+            <!-- Priority 3: Run RemoveItemFromCartTest third -->
+            <class name="sauseLab.tests.RemoveItemFromCartTest"/>
+        </classes>
+    </test>
+</suite>

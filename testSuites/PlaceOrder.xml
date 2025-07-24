@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo_E2E_Suite" parallel="false">
+
+  <listeners>
+    <listener class-name="sauseLab.TestComponents.Listeners"/>
+  </listeners>
+
+  <test thread-count="5" name="PlaceOrderTest">
+    <classes>
+      <class name="sauseLab.TestComponents.baseTest"/>
+      <class name="sauseLab.tests.PlaceOrderTest"/>
+    </classes>
+  </test>
+
+</suite>

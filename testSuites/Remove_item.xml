@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RemoveItemFromCartSuite" parallel="false">
+    <listeners>
+        <listener class-name="sauseLab.TestComponents.Listeners"/>
+        <!-- Add any other listeners if required -->
+    </listeners>
+    <test name="Remove Item From Cart">
+        <classes>
+            <class name="sauseLab.tests.RemoveItemFromCartTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="5" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-24T18:19:03 IST" name="FullRegressionSuite" finished-at="2025-07-24T18:20:27 IST" duration-ms="84265">
+    <groups>
+    </groups>
+    <test started-at="2025-07-24T18:19:03 IST" name="All E2E Tests" finished-at="2025-07-24T18:20:27 IST" duration-ms="84265">
+      <class name="sauseLab.tests.PlaceOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sauseLab.tests.PlaceOrderTest@18317edc]" started-at="2025-07-24T18:19:03 IST" name="launchApplication" finished-at="2025-07-24T18:19:07 IST" duration-ms="3506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="PlaceOrder()[pri:0, instance:sauseLab.tests.PlaceOrderTest@18317edc]" started-at="2025-07-24T18:19:07 IST" name="PlaceOrder" finished-at="2025-07-24T18:19:28 IST" duration-ms="21484" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Checkout info form rejected: Error: First Name is required]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Checkout info form rejected: Error: First Name is required
+at org.testng.Assert.fail(Assert.java:111)
+at sauseLab.tests.PlaceOrderTest.PlaceOrder(PlaceOrderTest.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sauseLab.tests.PlaceOrderTest@18317edc]" started-at="2025-07-24T18:19:28 IST" name="tearDown" finished-at="2025-07-24T18:19:29 IST" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sauseLab.tests.PlaceOrderTest@18317edc]" started-at="2025-07-24T18:19:29 IST" name="launchApplication" finished-at="2025-07-24T18:19:32 IST" duration-ms="3043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="PlaceOrder()[pri:0, instance:sauseLab.tests.PlaceOrderTest@18317edc]" started-at="2025-07-24T18:19:32 IST" name="PlaceOrder" finished-at="2025-07-24T18:19:53 IST" duration-ms="21382" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Checkout info form rejected: Error: First Name is required]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Checkout info form rejected: Error: First Name is required
+at org.testng.Assert.fail(Assert.java:111)
+at sauseLab.tests.PlaceOrderTest.PlaceOrder(PlaceOrderTest.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sauseLab.tests.PlaceOrderTest@18317edc]" started-at="2025-07-24T18:19:53 IST" name="tearDown" finished-at="2025-07-24T18:19:54 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- sauseLab.tests.PlaceOrderTest -->
+      <class name="sauseLab.tests.RemoveItemFromCartTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sauseLab.tests.RemoveItemFromCartTest@389b0789]" started-at="2025-07-24T18:20:03 IST" name="launchApplication" finished-at="2025-07-24T18:20:06 IST" duration-ms="3439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="removeProductFromCart()[pri:1, instance:sauseLab.tests.RemoveItemFromCartTest@389b0789]" started-at="2025-07-24T18:20:06 IST" name="removeProductFromCart" finished-at="2025-07-24T18:20:27 IST" duration-ms="20667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sauseLab.tests.RemoveItemFromCartTest@389b0789]" started-at="2025-07-24T18:20:27 IST" name="tearDown" finished-at="2025-07-24T18:20:27 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- sauseLab.tests.RemoveItemFromCartTest -->
+      <class name="sauseLab.tests.negativeLoginTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sauseLab.tests.negativeLoginTest@35a3d49f]" started-at="2025-07-24T18:19:54 IST" name="launchApplication" finished-at="2025-07-24T18:19:57 IST" duration-ms="3257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="negativeLogin_invalidPassword()[pri:2, instance:sauseLab.tests.negativeLoginTest@35a3d49f]" started-at="2025-07-24T18:19:57 IST" name="negativeLogin_invalidPassword" finished-at="2025-07-24T18:19:58 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLogin_invalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sauseLab.tests.negativeLoginTest@35a3d49f]" started-at="2025-07-24T18:19:58 IST" name="tearDown" finished-at="2025-07-24T18:19:58 IST" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:sauseLab.tests.negativeLoginTest@35a3d49f]" started-at="2025-07-24T18:19:58 IST" name="launchApplication" finished-at="2025-07-24T18:20:02 IST" duration-ms="3097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="negativeLogin_lockedOutUser()[pri:3, instance:sauseLab.tests.negativeLoginTest@35a3d49f]" started-at="2025-07-24T18:20:02 IST" name="negativeLogin_lockedOutUser" finished-at="2025-07-24T18:20:02 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLogin_lockedOutUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sauseLab.tests.negativeLoginTest@35a3d49f]" started-at="2025-07-24T18:20:02 IST" name="tearDown" finished-at="2025-07-24T18:20:03 IST" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- sauseLab.tests.negativeLoginTest -->
+    </test> <!-- All E2E Tests -->
+  </suite> <!-- FullRegressionSuite -->
+</testng-results>
