@@ -10,7 +10,7 @@ Browsers: Chrome (recommended, v100+), or any supported by Selenium
 ChromeDriver compatible with your Chrome browser version
 (handled by Selenium 4.x; no manual path config required in most cases)
 
-Setup Instructions
+**Setup Instructions**
 1. Clone the repository
 bash
 git clone <your-repo-url>
@@ -74,7 +74,7 @@ src/
       sauseLab/
         tests/                 # Test classes (E2E, negative, cart, etc.)
 reports/                       # Extent HTML reports (auto-created)
-testng.xml                     # Main test suite
+testng.xml                     # Main testSuite
 Key Features
 Robust POM structure for maintainable automation
 
@@ -95,7 +95,7 @@ Troubleshooting
 Dependencies not resolving:
 Ensure Maven is installed and mvn clean install is run.
 
-Webdriver errors:
+**Webdriver errors:**
 Ensure Chrome is installed and matches the detected ChromeDriver. Update browser or change the driver version if needed.
 
 Reports not generated:
